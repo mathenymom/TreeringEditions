@@ -1,0 +1,53 @@
+﻿/* Library: final x-axis alignment for every card row */
+.library-screen .library-book-card,
+.library-screen .library-card-ready,
+.library-screen .library-card-ready:first-child,
+.library-screen .library-card-ready:not(:first-child),
+.library-screen .library-card-progress,
+.library-screen .library-card-requested,
+.library-screen .library-card-everyday,
+.library-screen .library-card-owned,
+.library-screen .requested-card,
+.library-screen .library-shelf-owned .library-book-card {
+  grid-template-columns: 104px minmax(0, 1fr) !important;
+  column-gap: 12px !important;
+}
+.library-screen .library-book-card > img.library-cover-thumb,
+.library-screen .library-card-ready > img.library-cover-thumb,
+.library-screen .library-card-progress > img.library-cover-thumb,
+.library-screen .library-card-requested > img.library-cover-thumb,
+.library-screen .library-card-everyday > img.library-cover-thumb,
+.library-screen .library-card-owned > img.library-cover-thumb {
+  width: 72px !important;
+  height: 72px !important;
+  justify-self: start !important;
+  align-self: center !important;
+}
+.library-screen .library-book-card > span,
+.library-screen .library-card-ready > span,
+.library-screen .library-card-ready:first-child > span,
+.library-screen .library-card-ready:not(:first-child) > span,
+.library-screen .library-card-progress > span,
+.library-screen .library-card-requested > span,
+.library-screen .library-card-everyday > span,
+.library-screen .library-card-owned > span,
+.library-screen .requested-card > span,
+.library-screen .library-shelf-owned .library-book-card > span {
+  grid-column: 2 !important;
+  justify-self: start !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  transform: none !important;
+  text-align: left !important;
+}
+.library-screen .library-book-card > span > strong,
+.library-screen .library-book-card > span > small,
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill,
+.library-screen .library-book-card > span > .library-progress-bar {
+  justify-self: start !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  transform: none !important;
+}

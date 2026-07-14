@@ -1,0 +1,23 @@
+﻿/* Home: green Ready pill is the primary action; blue/amber pills remain informational */
+.home-primary-copy > button.home-ready-pill-action,
+.home-primary-copy .home-ready-pill-action.library-status-pill.ready {
+  display: inline-grid !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  min-height: 24px !important;
+  margin: 0 !important;
+  padding: 0 12px !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  background: #49d89d !important;
+  color: var(--edition-ink) !important;
+  box-shadow: 0 8px 18px rgba(5, 77, 78, .12) !important;
+  cursor: pointer !important;
+  place-items: center !important;
+  font-size: 9.5px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+.home-primary-copy > button.home-ready-pill-action:active {
+  transform: translateY(1px) !important;
+}

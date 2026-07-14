@@ -1,0 +1,14 @@
+﻿/* Library: align Purchased card text with the rest of the rows */
+.library-screen .library-shelf-owned .library-book-card,
+.library-screen .library-card-owned {
+  grid-template-columns: 118px minmax(0, 1fr) !important;
+}
+.library-screen .library-shelf-owned .library-cover-thumb,
+.library-screen .library-card-owned .library-cover-thumb {
+  justify-self: start !important;
+}
+.library-screen .library-shelf-owned .library-book-card > span,
+.library-screen .library-card-owned > span {
+  justify-self: stretch !important;
+  width: 100% !important;
+}

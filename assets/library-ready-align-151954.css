@@ -1,0 +1,22 @@
+﻿
+/* Library: align Ready to Review rows with the rest of the list */
+.library-screen .library-card-ready {
+  grid-template-columns: 72px minmax(0, 1fr) !important;
+  justify-items: stretch !important;
+  text-align: left !important;
+}
+.library-screen .library-card-ready > span {
+  justify-items: start !important;
+  align-content: center !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+.library-screen .library-card-ready strong,
+.library-screen .library-card-ready small {
+  text-align: left !important;
+  justify-self: start !important;
+}
+.library-screen .library-card-ready .library-status-pill {
+  justify-self: start !important;
+  text-align: left !important;
+}

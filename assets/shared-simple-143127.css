@@ -1,0 +1,48 @@
+﻿
+/* Shared Editions: simple cover thumbnails, not miniature book mockups */
+.shared-editions-screen .shared-edition-card {
+  grid-template-columns: 80px minmax(0, 1fr) auto !important;
+  gap: 14px !important;
+  align-items: center !important;
+  min-height: 118px !important;
+  padding: 14px !important;
+}
+.shared-editions-screen .shared-cover-thumb {
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 12px !important;
+  object-fit: cover !important;
+  display: block !important;
+  box-shadow: 0 12px 24px rgba(5, 77, 78, .14) !important;
+  background: #fffdf8 !important;
+}
+.shared-editions-screen .shared-edition-card .book,
+.shared-editions-screen .shared-edition-card .canonical-edition-book {
+  display: none !important;
+}
+.shared-editions-screen .shared-edition-copy {
+  gap: 5px !important;
+  min-width: 0 !important;
+}
+.shared-editions-screen .shared-edition-copy strong {
+  font-size: 15px !important;
+  line-height: 1.12 !important;
+  white-space: normal !important;
+}
+.shared-editions-screen .shared-edition-copy small {
+  font-size: 11px !important;
+  line-height: 1.25 !important;
+  color: var(--edition-muted) !important;
+  font-weight: 800 !important;
+}
+.shared-editions-screen .gallery-badge {
+  display: none !important;
+}
+.shared-editions-screen .avatar-row {
+  margin-top: 2px !important;
+}
+.shared-editions-screen .shared-action {
+  align-self: center !important;
+  min-width: 72px !important;
+  justify-content: center !important;
+}

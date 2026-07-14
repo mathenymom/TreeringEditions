@@ -1,0 +1,97 @@
+﻿
+/* Library refinement: action/progress/discovery/bookshelf */
+.library-screen .library-shelves {
+  gap: 16px !important;
+}
+.library-screen .library-shelf-owned {
+  margin-top: 2px !important;
+}
+.library-screen .library-shelf-owned .library-shelf-row {
+  display: flex !important;
+  gap: 14px !important;
+  overflow-x: auto !important;
+  padding: 2px 2px 8px !important;
+}
+.library-screen .library-shelf-owned .library-book-card {
+  flex: 0 0 128px !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  justify-items: center !important;
+  gap: 7px !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  text-align: center !important;
+}
+.library-screen .library-shelf-owned .book.canonical-edition-book {
+  --book-size: 92px !important;
+  filter: drop-shadow(0 14px 20px rgba(5, 77, 78, .14)) !important;
+}
+.library-screen .library-shelf-owned .library-book-card > span {
+  display: grid !important;
+  gap: 3px !important;
+  justify-items: center !important;
+}
+.library-screen .library-shelf-owned .library-book-card strong {
+  font-size: 12px !important;
+  line-height: 1.1 !important;
+}
+.library-screen .library-shelf-owned .library-book-card small {
+  font-size: 9.5px !important;
+  line-height: 1.2 !important;
+}
+.library-screen .library-shelf-owned .library-status-pill {
+  transform: scale(.88) !important;
+  transform-origin: center !important;
+}
+.library-screen .requested-shelf .library-shelf-row {
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+}
+.library-screen .requested-card {
+  display: grid !important;
+  grid-template-columns: 58px 1fr !important;
+  align-items: center !important;
+  gap: 13px !important;
+  border: 1px dashed rgba(2, 122, 105, .24) !important;
+  background: rgba(255, 253, 248, .58) !important;
+  border-radius: 20px !important;
+  padding: 13px !important;
+  box-shadow: 0 10px 24px rgba(5, 77, 78, .045) !important;
+  text-align: left !important;
+}
+.library-screen .requested-story-image {
+  width: 58px !important;
+  height: 58px !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  display: block !important;
+  box-shadow: 0 10px 20px rgba(5, 77, 78, .12) !important;
+}
+.library-screen .requested-story-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+.library-screen .requested-card > span:not(.requested-story-image) {
+  display: grid !important;
+  gap: 5px !important;
+  justify-items: start !important;
+}
+.library-screen .requested-card strong {
+  font-size: 15px !important;
+}
+.library-screen .requested-card small {
+  color: var(--edition-muted) !important;
+  font-size: 10.5px !important;
+  line-height: 1.25 !important;
+}
+.library-screen .requested-card .library-status-pill {
+  order: -1 !important;
+}
+.library-screen .requested-card .book,
+.library-screen .requested-card .canonical-edition-book {
+  display: none !important;
+}

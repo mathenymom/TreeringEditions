@@ -1,0 +1,16 @@
+﻿
+/* Review Edition: restored optional Review photos action */
+.canonical-review-edition .canonical-review-actions .generate-version-action small {
+  grid-column: 3 !important;
+  justify-self: end !important;
+  white-space: nowrap !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  opacity: .72 !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action {
+  grid-template-columns: 22px minmax(0, 1fr) auto !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action em {
+  grid-column: 2 / 4 !important;
+}

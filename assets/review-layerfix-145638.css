@@ -1,0 +1,9 @@
+﻿
+/* Review Pages: show regenerate direction sheet immediately above page preview */
+.canonical-review-edition .light-edit-sheet {
+  z-index: 60 !important;
+}
+.canonical-review-edition .light-edit-sheet .review-refine-sheet {
+  position: relative !important;
+  z-index: 61 !important;
+}

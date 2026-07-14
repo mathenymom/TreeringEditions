@@ -1,0 +1,22 @@
+﻿
+/* Review Edition: consistent action helper lines */
+.canonical-review-edition .canonical-review-actions button em,
+.canonical-review-edition .canonical-review-actions .generate-version-action em {
+  grid-column: 2 / 4 !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin-top: 1px !important;
+  color: var(--edition-muted) !important;
+  font-size: 11px !important;
+  font-style: normal !important;
+  font-weight: 800 !important;
+  line-height: 1.25 !important;
+  white-space: normal !important;
+  text-align: left !important;
+}
+.canonical-review-edition .canonical-review-actions button:first-child {
+  grid-template-columns: 22px minmax(0, 1fr) auto !important;
+}
+.canonical-review-edition .canonical-review-actions button:first-child em {
+  grid-column: 2 / 4 !important;
+}

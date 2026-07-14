@@ -1,0 +1,14 @@
+﻿
+/* Review Edition: make Create another version match white action cards */
+.canonical-review-edition .canonical-review-actions .generate-version-action {
+  background: #fffdf8eb !important;
+  border-color: rgba(2, 122, 105, .34) !important;
+  box-shadow: 0 14px 34px rgba(5, 77, 78, .08) !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action svg,
+.canonical-review-edition .canonical-review-actions .generate-version-action span {
+  color: var(--edition-ink) !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action em {
+  color: var(--edition-muted) !important;
+}

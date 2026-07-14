@@ -1,0 +1,23 @@
+﻿
+/* Library: unified 72px thumbnail cards */
+.library-screen .library-shelves { gap: 12px !important; }
+.library-screen .library-shelf { display: grid !important; gap: 7px !important; margin: 0 !important; }
+.library-screen .library-shelf-heading strong { font-size: 15px !important; line-height: 1.1 !important; }
+.library-screen .library-shelf-row,
+.library-screen .library-shelf-owned .library-shelf-row,
+.library-screen .requested-shelf .library-shelf-row { display: grid !important; grid-template-columns: 1fr !important; gap: 8px !important; overflow: visible !important; padding: 0 !important; }
+.library-screen .library-book-card,
+.library-screen .library-shelf-owned .library-book-card,
+.library-screen .requested-card { display: grid !important; grid-template-columns: 72px minmax(0, 1fr) !important; align-items: center !important; gap: 12px !important; width: 100% !important; min-height: 96px !important; max-height: 96px !important; padding: 12px !important; border: 1px solid rgba(5,77,78,.08) !important; border-radius: 20px !important; background: rgba(255,253,248,.62) !important; box-shadow: 0 12px 28px rgba(5,77,78,.06) !important; text-align: left !important; justify-items: stretch !important; }
+.library-screen .library-cover-thumb { width: 72px !important; height: 72px !important; border-radius: 12px !important; object-fit: cover !important; display: block !important; box-shadow: 0 10px 20px rgba(5,77,78,.12) !important; background: #fffdf8 !important; }
+.library-screen .library-book-card .book,
+.library-screen .library-book-card .canonical-edition-book,
+.library-screen .requested-story-image { display: none !important; }
+.library-screen .library-book-card > span:not(.requested-story-image),
+.library-screen .requested-card > span:not(.requested-story-image),
+.library-screen .library-shelf-owned .library-book-card > span { display: grid !important; gap: 4px !important; min-width: 0 !important; justify-items: start !important; align-content: center !important; }
+.library-screen .library-book-card strong { color: var(--edition-ink) !important; font-size: 15px !important; font-weight: 900 !important; line-height: 1.08 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; max-width: 100% !important; }
+.library-screen .library-book-card small { color: var(--edition-muted) !important; font-size: 10.5px !important; font-weight: 750 !important; line-height: 1.15 !important; white-space: nowrap !important; overflow: hidden !important; text-overflow: ellipsis !important; max-width: 100% !important; }
+.library-screen .library-status-pill { justify-self: start !important; min-height: 22px !important; padding: 5px 9px !important; font-size: 8.5px !important; line-height: 1 !important; transform: none !important; }
+.library-screen .library-progress-bar { width: 132px !important; max-width: 100% !important; height: 4px !important; margin-top: 1px !important; }
+.library-screen .library-generation-note { display: none !important; }

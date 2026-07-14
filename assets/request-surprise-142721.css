@@ -1,0 +1,15 @@
+﻿
+/* Request: keep Surprise me as a single top entry point */
+.request-edition-screen .surprise-memory-card {
+  display: none !important;
+}
+.request-edition-screen .memory-example-row button:first-child {
+  border-color: rgba(2, 122, 105, .28) !important;
+  background: rgba(73, 216, 157, .16) !important;
+  color: var(--edition-ink) !important;
+}
+.request-edition-screen .memory-example-row button:first-child::before {
+  content: "✦";
+  margin-right: 5px;
+  color: #027a69;
+}

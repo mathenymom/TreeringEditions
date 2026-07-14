@@ -1,0 +1,79 @@
+﻿/* Library: explicit column positions so every row aligns visually */
+.library-screen .library-book-card,
+.library-screen .library-card-ready,
+.library-screen .library-card-ready:first-child,
+.library-screen .library-card-ready:not(:first-child),
+.library-screen .library-card-progress,
+.library-screen .library-card-requested,
+.library-screen .library-card-everyday,
+.library-screen .library-card-owned,
+.library-screen .requested-card {
+  position: relative !important;
+  display: block !important;
+  min-height: 96px !important;
+  max-height: 96px !important;
+  padding: 12px !important;
+  text-align: left !important;
+}
+.library-screen .library-book-card > img.library-cover-thumb,
+.library-screen .library-card-ready > img.library-cover-thumb,
+.library-screen .library-card-progress > img.library-cover-thumb,
+.library-screen .library-card-requested > img.library-cover-thumb,
+.library-screen .library-card-everyday > img.library-cover-thumb,
+.library-screen .library-card-owned > img.library-cover-thumb {
+  position: absolute !important;
+  left: 12px !important;
+  top: 50% !important;
+  width: 72px !important;
+  height: 72px !important;
+  margin: 0 !important;
+  transform: translateY(-50%) !important;
+}
+.library-screen .library-book-card > span,
+.library-screen .library-card-ready > span,
+.library-screen .library-card-ready:first-child > span,
+.library-screen .library-card-ready:not(:first-child) > span,
+.library-screen .library-card-progress > span,
+.library-screen .library-card-requested > span,
+.library-screen .library-card-everyday > span,
+.library-screen .library-card-owned > span,
+.library-screen .requested-card > span {
+  position: absolute !important;
+  left: 128px !important;
+  right: 12px !important;
+  top: 50% !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: translateY(-50%) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  gap: 4px !important;
+  text-align: left !important;
+}
+.library-screen .library-book-card > span > strong,
+.library-screen .library-book-card > span > small,
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill,
+.library-screen .library-book-card > span > .library-progress-bar {
+  position: static !important;
+  align-self: flex-start !important;
+  text-align: left !important;
+  margin-left: 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span > strong {
+  order: 1 !important;
+}
+.library-screen .library-book-card > span > small {
+  order: 2 !important;
+}
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill {
+  order: 3 !important;
+}
+.library-screen .library-book-card > span > .library-progress-bar {
+  order: 4 !important;
+}

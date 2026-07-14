@@ -1,0 +1,43 @@
+﻿
+/* Review action card fixes */
+.canonical-review-edition .canonical-review-actions button {
+  grid-template-columns: 22px minmax(0, 1fr) auto !important;
+  align-items: center !important;
+  column-gap: 12px !important;
+  min-height: 56px !important;
+  padding: 12px 14px !important;
+}
+.canonical-review-edition .canonical-review-actions button span {
+  min-width: 0 !important;
+  white-space: normal !important;
+  line-height: 1.2 !important;
+}
+.canonical-review-edition .canonical-review-actions button small {
+  grid-column: 3 !important;
+  justify-self: end !important;
+  white-space: nowrap !important;
+  font-size: 10px !important;
+  line-height: 1 !important;
+  opacity: 0.72 !important;
+}
+.canonical-review-edition .canonical-review-actions button em {
+  grid-column: 2 / 4 !important;
+  max-width: none !important;
+  width: 100% !important;
+  margin-top: 2px !important;
+  color: #5f8582 !important;
+  font-size: 12px !important;
+  font-style: normal !important;
+  font-weight: 650 !important;
+  line-height: 1.35 !important;
+  white-space: normal !important;
+  overflow-wrap: normal !important;
+  word-break: normal !important;
+  text-align: left !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action {
+  grid-template-columns: 22px minmax(0, 1fr) !important;
+}
+.canonical-review-edition .canonical-review-actions .generate-version-action em {
+  grid-column: 2 / 3 !important;
+}

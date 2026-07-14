@@ -1,0 +1,20 @@
+﻿
+/* Shared version direction sheet refinements */
+.review-refine-sheet .review-direction-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+.review-refine-sheet .review-direction-grid button:first-child {
+  grid-column: 1 / -1 !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+.review-refine-sheet > button,
+.review-refine-sheet .light-edit-cancel {
+  justify-content: center !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+.review-refine-sheet > button:not(.light-edit-cancel) {
+  color: var(--edition-ink) !important;
+  font-weight: 900 !important;
+}

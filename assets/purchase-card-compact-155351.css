@@ -1,0 +1,43 @@
+﻿/* Purchase: compact Standard/Premium product cards */
+.purchase-screen .book-options {
+  gap: 8px !important;
+}
+.purchase-screen .book-option {
+  min-height: 92px !important;
+  max-height: 96px !important;
+  padding: 9px 10px !important;
+  gap: 5px 8px !important;
+  align-content: start !important;
+  grid-template-columns: 42px 1fr !important;
+  grid-template-areas: "cover copy" "price price" !important;
+}
+.purchase-screen .book-option img {
+  width: 42px !important;
+  height: 42px !important;
+}
+.purchase-screen .book-option > div {
+  gap: 0 !important;
+}
+.purchase-screen .book-option strong {
+  font-size: 12.5px !important;
+  line-height: 1.05 !important;
+}
+.purchase-screen .book-option span,
+.purchase-screen .book-option small {
+  font-size: 8.8px !important;
+  line-height: 1.12 !important;
+}
+.purchase-screen .book-option b {
+  font-size: 13px !important;
+  line-height: 1 !important;
+  margin-top: 2px !important;
+}
+.purchase-screen .book-option em {
+  right: 8px !important;
+  bottom: 7px !important;
+  padding: 3px 6px !important;
+  font-size: 7px !important;
+}
+.purchase-screen .book-option:has(em) b {
+  padding-bottom: 12px !important;
+}

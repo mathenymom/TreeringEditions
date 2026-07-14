@@ -1,0 +1,10 @@
+﻿/* Review Edition: make all secondary action lines match the quieter Invite style */
+.canonical-review-edition .canonical-review-actions button em,
+.canonical-review-edition .canonical-review-actions .generate-version-action em {
+  color: var(--edition-muted) !important;
+  font-size: 10.5px !important;
+  font-weight: 750 !important;
+  line-height: 1.25 !important;
+  font-style: normal !important;
+  letter-spacing: 0 !important;
+}

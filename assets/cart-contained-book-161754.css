@@ -1,0 +1,93 @@
+﻿/* Cart product render containment + one-line edition title */
+.cart-screen .screen-header p:not(.eyebrow) {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.cart-screen .cart-card {
+  position: relative !important;
+  z-index: 3 !important;
+  overflow: hidden !important;
+}
+.cart-screen .cart-edition {
+  grid-template-columns: 112px minmax(0, 1fr) auto !important;
+  gap: 14px !important;
+  overflow: hidden !important;
+}
+.cart-screen .cart-edition .book,
+.cart-screen .cart-edition .book.canonical-edition-book,
+.cart-screen .cart-edition .book-cover {
+  position: relative !important;
+  width: 104px !important;
+  height: 86px !important;
+  min-width: 104px !important;
+  max-width: 104px !important;
+  overflow: hidden !important;
+  border-radius: 12px 15px 15px 12px !important;
+  background: transparent !important;
+  box-shadow: 0 16px 28px rgba(5, 77, 78, .15) !important;
+}
+.cart-screen .cart-edition .book-object {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 104px !important;
+  height: 86px !important;
+  transform: none !important;
+  filter: none !important;
+  border-radius: inherit !important;
+  overflow: hidden !important;
+}
+.cart-screen .cart-edition .book-top-pages,
+.cart-screen .cart-edition .book-pages {
+  display: none !important;
+}
+.cart-screen .cart-edition .book-spine {
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 12px !important;
+  display: block !important;
+  background: linear-gradient(90deg, rgba(5,77,78,.28), rgba(255,255,255,.36)) !important;
+  z-index: 4 !important;
+  overflow: hidden !important;
+}
+.cart-screen .cart-edition .book-spine img,
+.cart-screen .cart-edition .book-spine span,
+.cart-screen .cart-edition .book-spine small {
+  display: none !important;
+}
+.cart-screen .cart-edition .book-cover-face {
+  position: absolute !important;
+  inset: 0 0 0 8px !important;
+  width: auto !important;
+  height: auto !important;
+  border-radius: 8px 14px 14px 8px !important;
+  overflow: hidden !important;
+  transform: none !important;
+  box-shadow: inset 1px 0 rgba(255,255,255,.45) !important;
+}
+.cart-screen .cart-edition .book-cover-photo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+}
+.cart-screen .cart-edition .book-cover-title {
+  display: none !important;
+}
+.cart-screen .cart-edition > div:not(.book) {
+  min-width: 0 !important;
+  max-width: 170px !important;
+}
+.cart-screen .cart-edition > div:not(.book) > strong {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  font-size: 14px !important;
+  letter-spacing: -0.01em !important;
+  line-height: 1.05 !important;
+}
+.cart-screen .cart-edition > b {
+  justify-self: end !important;
+  margin-left: 4px !important;
+}

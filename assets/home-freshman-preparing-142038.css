@@ -1,0 +1,25 @@
+﻿
+/* Home: Freshman Year is preparing inside Coming up */
+.home-supporting-card:has(.status-symbol.preparing)::after {
+  content: "Preparing" !important;
+  background: #42c2f0 !important;
+  color: #054d4e !important;
+  grid-column: 2 !important;
+  justify-self: start !important;
+  border-radius: 999px !important;
+  padding: 5px 9px !important;
+  font-size: 9px !important;
+  font-weight: 900 !important;
+  line-height: 1 !important;
+}
+.home-supporting-card:has(.status-symbol.preparing) .status-symbol {
+  background: rgba(66, 194, 240, .18) !important;
+  color: #087da0 !important;
+}
+.home-supporting-card:has(.status-symbol.request)::after {
+  display: none !important;
+  content: none !important;
+}
+.home-purchased-section {
+  display: none !important;
+}

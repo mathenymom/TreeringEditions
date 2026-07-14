@@ -1,0 +1,18 @@
+﻿
+/* Shared screen: lock thumbnails to photo-forward Edition covers */
+.shared-editions-screen .book.canonical-edition-book .book-cover-title,
+.shared-editions-screen .book.canonical-edition-book .book-cover-title *,
+.shared-editions-screen .book.canonical-edition-book .book-spine span,
+.shared-editions-screen .book.canonical-edition-book .book-spine small {
+  display: none !important;
+  content: none !important;
+}
+.shared-editions-screen .book.canonical-edition-book .book-cover-photo,
+.shared-editions-screen .book.canonical-edition-book .book-spine img {
+  display: block !important;
+  opacity: 1 !important;
+  object-fit: cover !important;
+}
+.shared-editions-screen .book.canonical-edition-book .book-cover-face {
+  background: transparent !important;
+}

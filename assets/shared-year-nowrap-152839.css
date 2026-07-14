@@ -1,0 +1,7 @@
+﻿/* Shared Editions: keep short book titles on one line */
+.shared-editions-screen .shared-edition-copy > strong {
+  white-space: nowrap !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-width: none !important;
+}

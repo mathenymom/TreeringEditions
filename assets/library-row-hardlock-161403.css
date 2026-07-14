@@ -1,0 +1,116 @@
+﻿/* Library hard lock: one consistent left-aligned row pattern */
+.library-screen .library-shelves {
+  gap: 14px !important;
+}
+.library-screen .library-shelf {
+  margin: 0 0 14px !important;
+}
+.library-screen .library-shelf-heading {
+  margin: 0 0 8px !important;
+}
+.library-screen .library-shelf-row {
+  display: grid !important;
+  gap: 10px !important;
+}
+.library-screen .library-book-card,
+.library-screen .library-card-ready,
+.library-screen .library-card-progress,
+.library-screen .library-card-requested,
+.library-screen .library-card-everyday,
+.library-screen .library-card-owned,
+.library-screen .requested-card {
+  position: relative !important;
+  display: grid !important;
+  grid-template-columns: 92px minmax(0, 1fr) !important;
+  align-items: center !important;
+  column-gap: 14px !important;
+  width: 100% !important;
+  min-height: 104px !important;
+  height: 104px !important;
+  max-height: 104px !important;
+  padding: 12px !important;
+  text-align: left !important;
+  overflow: hidden !important;
+}
+.library-screen .library-book-card > img.library-cover-thumb,
+.library-screen .library-card-ready > img.library-cover-thumb,
+.library-screen .library-card-progress > img.library-cover-thumb,
+.library-screen .library-card-requested > img.library-cover-thumb,
+.library-screen .library-card-everyday > img.library-cover-thumb,
+.library-screen .library-card-owned > img.library-cover-thumb {
+  position: static !important;
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  justify-self: center !important;
+  align-self: center !important;
+  width: 72px !important;
+  height: 72px !important;
+  min-width: 72px !important;
+  max-width: 72px !important;
+  margin: 0 !important;
+  transform: none !important;
+  object-fit: cover !important;
+}
+.library-screen .library-book-card > span,
+.library-screen .library-card-ready > span,
+.library-screen .library-card-progress > span,
+.library-screen .library-card-requested > span,
+.library-screen .library-card-everyday > span,
+.library-screen .library-card-owned > span,
+.library-screen .requested-card > span {
+  position: static !important;
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  display: grid !important;
+  grid-template-rows: auto auto auto auto !important;
+  justify-items: start !important;
+  align-items: start !important;
+  justify-content: start !important;
+  align-content: center !important;
+  gap: 4px !important;
+  text-align: left !important;
+}
+.library-screen .library-book-card > span > strong,
+.library-screen .library-book-card > span > small,
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill,
+.library-screen .library-book-card > span > .library-progress-bar {
+  position: static !important;
+  justify-self: start !important;
+  align-self: start !important;
+  text-align: left !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span > strong {
+  order: 1 !important;
+  max-width: 100% !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  white-space: normal !important;
+  line-height: 1.12 !important;
+}
+.library-screen .library-book-card > span > small {
+  order: 2 !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  line-height: 1.18 !important;
+}
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill {
+  order: 3 !important;
+}
+.library-screen .library-book-card > span > .library-progress-bar {
+  order: 4 !important;
+  width: 132px !important;
+  max-width: 100% !important;
+  margin-top: 1px !important;
+}

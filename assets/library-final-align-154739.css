@@ -1,0 +1,82 @@
+﻿/* Library: final card alignment and content order lock */
+.library-screen .library-book-card,
+.library-screen .library-card-ready,
+.library-screen .library-card-ready:first-child,
+.library-screen .library-card-ready:not(:first-child),
+.library-screen .library-card-progress,
+.library-screen .library-card-requested,
+.library-screen .library-card-everyday,
+.library-screen .library-card-owned,
+.library-screen .requested-card {
+  display: grid !important;
+  grid-template-columns: 118px minmax(0, 1fr) !important;
+  align-items: center !important;
+  justify-items: stretch !important;
+  text-align: left !important;
+}
+.library-screen .library-book-card > img.library-cover-thumb,
+.library-screen .library-book-card > .library-cover-thumb,
+.library-screen .library-card-ready > img.library-cover-thumb,
+.library-screen .library-card-progress > img.library-cover-thumb,
+.library-screen .library-card-requested > img.library-cover-thumb,
+.library-screen .library-card-everyday > img.library-cover-thumb,
+.library-screen .library-card-owned > img.library-cover-thumb {
+  grid-column: 1 !important;
+  grid-row: 1 !important;
+  justify-self: start !important;
+  align-self: center !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span,
+.library-screen .library-card-ready > span,
+.library-screen .library-card-ready:first-child > span,
+.library-screen .library-card-ready:not(:first-child) > span,
+.library-screen .library-card-progress > span,
+.library-screen .library-card-requested > span,
+.library-screen .library-card-everyday > span,
+.library-screen .library-card-owned > span,
+.library-screen .requested-card > span {
+  grid-column: 2 !important;
+  grid-row: 1 !important;
+  justify-self: start !important;
+  align-self: center !important;
+  justify-items: start !important;
+  align-content: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  text-align: left !important;
+  display: grid !important;
+  gap: 4px !important;
+}
+.library-screen .library-book-card > span > strong {
+  order: 1 !important;
+  justify-self: start !important;
+  text-align: left !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span > small {
+  order: 2 !important;
+  justify-self: start !important;
+  text-align: left !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span > .library-status-pill,
+.library-screen .library-book-card > span > em.library-status-pill {
+  order: 3 !important;
+  justify-self: start !important;
+  align-self: start !important;
+  text-align: left !important;
+  margin: 1px 0 0 !important;
+  transform: none !important;
+}
+.library-screen .library-book-card > span > .library-progress-bar {
+  order: 4 !important;
+  justify-self: start !important;
+  margin: 1px 0 0 !important;
+}

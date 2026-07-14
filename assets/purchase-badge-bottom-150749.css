@@ -1,0 +1,10 @@
+﻿
+/* Purchase: position Recommended badge at bottom of Premium card */
+.book-option em {
+  top: auto !important;
+  right: 9px !important;
+  bottom: 9px !important;
+}
+.book-option:has(em) b {
+  padding-bottom: 18px !important;
+}

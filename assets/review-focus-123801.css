@@ -1,0 +1,60 @@
+﻿
+/* Review Edition simplification */
+.canonical-review-edition .ready-page-heading > span {
+  display: none !important;
+}
+.canonical-review-edition .ready-page-heading {
+  margin-bottom: 6px !important;
+}
+.canonical-review-edition .ready-title-row {
+  align-items: center !important;
+  gap: 8px !important;
+}
+.canonical-review-edition .ready-title-row h1 {
+  font-size: clamp(19px, 5.2vw, 25px) !important;
+  line-height: 1.05 !important;
+  font-weight: 800 !important;
+  white-space: nowrap !important;
+  letter-spacing: 0 !important;
+}
+.canonical-review-edition .ready-title-row .edit-title-icon,
+.canonical-review-edition .ready-title-row button {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  border: 1px solid rgba(5, 77, 78, 0.14) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: #054d4e !important;
+  font-size: 15px !important;
+  line-height: 1 !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 8px 20px rgba(5, 77, 78, 0.08) !important;
+}
+.canonical-review-edition .ready-discovery-copy {
+  margin-top: 8px !important;
+  margin-bottom: 10px !important;
+}
+.canonical-review-edition .hub-book {
+  margin: 4px auto 10px !important;
+  transform: scale(0.9) !important;
+  transform-origin: center top !important;
+}
+.canonical-review-edition .hub-section {
+  margin-top: -12px !important;
+}
+.canonical-review-edition .canonical-review-actions {
+  gap: 8px !important;
+}
+.canonical-review-edition .review-hub-bottom-actions {
+  margin-top: 10px !important;
+}
+.canonical-review-edition .hub-book .book-cover.mockup-cover {
+  width: min(274px, 68vw) !important;
+}
+.canonical-review-edition .hub-book .book-cover.mockup-cover .book-mockup-image {
+  transform: scale(1.04) !important;
+}
